@@ -1,31 +1,27 @@
 <html>
 	<head>
-		<title>Task2</title>
+		
 	</head>
 	<body>
 		<div>
-			<h1>SmallBees BootCamp</h1>
+			<h1>Rajeev Gandhi University Of Knowledge Technologies</h1>
 		</div>
-		<div id="div1">
-			<p><strong>Cohort Members</strong></p>
-			<ol>
-				<li>Subhash</li>
-				<li>Lavanya</li>
-				<li>Narasimha</li>
-				<li>JayaSree</li>	
-			</ol>
+		<div>
+			<p>
+				<span>Rgukt IIIT</span>  is an Autonomous university,offering a 6 year integrated B.Tech programme to the meritious students of the 10th standard.It is situated 37 kilometers from Pulivendla town in the Indian State of Andhra Pradesh. It .Institute offers six branches in engineering.They are Civil,Chemical,Computer Science,Electronics and Communication,Mechanical and Material and Metallurgical Science.Around 6000 students are staying in the campus every year.Every year there will be intake of nearly 1000 students,who excelled and topped in their tenth standard.Soon after joining of the student.Every student will be provided with an laptop,uniform,shoes,towels,socks,free internet facility. ICT based education and accommodation will freely provided for the students.From every mandal,Nearly 2 to 3 students got seat in this IIIT.
+			</p>
+			<p>Campus List</p>
 			<ul>
-				<li>Yogendra</li>
-				<li>Praveen</li>
-				<li>Sumanth</li>
-				<li>Suresh</li>
+				<li>Rgukt, Ap IIIT</li>
+				<li>Rgukt, Nuzvidu</li>
+				<li>Rgukt, Ongole</li>
+				<li>Rgukt, Srikakulam</li>
 			</ul>
 		</div>
 		<div>
 			<span>Reference Links:</span>
 			<ul>
-				<li><a href="https://www.w3schools.com/">W3 Schools</a></li>
-				<li><a href="https://www.tutorialspoint.com/">Tutorials point</a></li>
+				<li><a href="http://www.rgukt.in/">Rgukt</a></li>
 			</ul>
 		</div>
 	</body>

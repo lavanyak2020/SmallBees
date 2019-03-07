@@ -1,1 +1,117 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Task4</title>
+    <meta name = "author" content = "Lavanya K" />
+    <meta charset="UTF-8">
+    <meta name="twitter/description" content="Smallbees bootcamp task3"/>
+    <meta name = "keywords" content = "HTML, Meta Tags, Metadata" />
+    <meta name = "description" content = "Learning about Meta Tags." />
+    <meta name = "revised" content = "Task3,06/03/2019" />
+    <meta http-equiv = "refresh" content = "1000; url = http://www.tutorialspoint.com" />
+    <meta http-equiv = "cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
+	</head>
+	<body>
+		<div>
+			<h1>Rajiv Gandhi University Of Knowledge Technologies</h1>
+		</div>
+		<div>
+			<p>
+				<span>Rgukt IIIT</span>  is an Autonomous university,offering a 6 year integrated B.Tech programme to the meritious students of the 10th standard.It is situated 37 kilometers from Pulivendla town in the Indian State of Andhra Pradesh. It .Institute offers six branches in engineering.They are Civil,Chemical,Computer Science,Electronics and Communication,Mechanical and Material and Metallurgical Science.Around 6000 students are staying in the campus every year.Every year there will be intake of nearly 1000 students,who excelled and topped in their tenth standard.Soon after joining of the student.Every student will be provided with an laptop,uniform,shoes,towels,socks,free internet facility. ICT based education and accommodation will freely provided for the students.From every mandal,Nearly 2 to 3 students got seat in this IIIT.
+			</p>
+			<p>Campus List</p>
+			<ul>
+				<li>Rgukt, Ap IIIT</li>
+				<li>Rgukt, Nuzvidu</li>
+				<li>Rgukt, Ongole</li>
+				<li>Rgukt, Srikakulam</li>
+			</ul>
+		</div>
+    <div>
+      <h4>Definition List</h4>
+      <dl>
+          <dt>Apple</dt>
+          <dd>Apple is fruit which is red in color</dd>
+          <dt>Orange</dt>
+          <dd>Orange is fruit which is orange in color</dd>
+          <dt>Kiwi</dt>
+          <dd>I love Kiwi milkshake</dd>
+      </dl>
+    </div>
+    <div>
+      <abbr title="Secondary School education">SSC</abbr><br/>
+      <h4>Quotes</h4>
+      Swami Vivekananda said <blockquote cite="www.google.com">Be good and Do good</blockquote>
+      Lavanya said<q>They are close to my bed not to my heart</q>
+      <h5>Address Tag</h5>
+      <address>
+          <pre>
+              VR kandriga,
+              Varadaiah Palem(M),
+              Chittoor(Dist),
+              Pincode:517541.
+          </pre>
+      </address>
+      <h4>Mathematical formulas</h4>
+      <ul>
+          <li>
+              <p>(a+b)<sup>2</sup>=a<sup>2</sup>+b<sup>2</sup>+2ab</p>
+          </li>
+          <li>
+              <p>h<sub>a</sub>(x)=a<sub>0</sub>+a<sub>1</sub>x<sub>1</sub>+a<sub>2</sub>x<sub>2</sub></p>
+          </li>
+      </ul>
+      <h4>Programming code</h4>
+      <code>
+          <pre>
+                def main():
+                    print("Heartly Welcome to Smallbees,Lavanya!")
+                if __name__=="__main__":
+                    main()
+          </pre>
+      </code>
+      <samp>The output is: Heartly Welcome to Smallbees,Lavanya!</samp>
+      <h4>Keyboard Shortcuts tags</h4>
+      <ul>
+          <li>
+              <pre>Shortcut : Purpose</pre>
+          </li>
+          <li>
+                <pre><kbd>ctrl+S</kbd> : save</pre>
+          </li>
+          <li>
+                <pre><kbd>ctrl+C</kbd> : copy</pre>
+          </li>
+          <li>
+                <pre><kbd>ctrl+V</kbd> : paste</pre>
+          </li>
+          <li>
+                <pre><kbd>ctrl+X</kbd> : cut</pre>
+          </li>
+      </ul>
+      <h4>Time tag</h4>
+      <p>We gonna celebrate technical fest <time datetime="2019-03-30">Abhiyanth 2K'19</time></p>
+    </div>
+		<div>
+			<span>Reference Links:</span>
+			<ul>
+				<li><a href="http://www.rgukt.in/" target="_blank">Rgukt</a></li>
+        <li><a href="http://www.google.com/" target="_self">Google</a></li>
+        <li><a href="#ai" target="_self">Artificial Intelligence</a></li>
+        <li><a href="#ml1" target="_self">Machine learning</a></li>
+			</ul>
+		</div>
+    <div>
+    <h1 id="ai">Modernize your organization with AI</h1>
+    <p>With enterprise AI on the rise, speed and agility are crucial to keeping competitive, yet custom solutions can be time consuming, complex, and costly. With Google Cloud AI solutions, you can quickly and easily apply solutions across your work streams or combine our technology with vendors you already work with. Whether you’re looking to classify images and videos automatically or deliver recommendations based on user data, you can use Google Cloud AI Solutions to drive insights and improve customer experiences.</p>
+    <h1 id="ml1">Introduction To Machine Learning</h1>
+    <p>Machine Learning is an idea to learn from examples and experience, without being explicitly programmed. Instead of writing code, you feed data to the generic algorithm, and it builds logic based on the data given.
+    For example, one kind of algorithm is a classification algorithm. It can put data into different groups. The classification algorithm used to detect handwritten alphabets could also be used to classify emails into spam and not-spam.
+    “A computer program is said to learn from experience E with some class of tasks T and performance measure P if its performance at tasks in T, as measured by P, improves with experience E.” -Tom M. Mitchell
+    </p>
+    </div>
+	</body>
+</html>
+
+
 

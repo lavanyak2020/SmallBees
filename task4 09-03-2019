@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LavanyaK</title>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="Machine learning,Gradient descent,Regression,Classification,Supervised learning,Unsupervised learning"/>
+        <meta name="description" content="Introduction to machine learning"/>
+        <meta name="revised" content="LavanyaK,08-03-2019"/>
+        <meta http-equiv="refresh" content="100;url = task5.html"/>
+        <meta http-equiv="cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
+        <style>
+            body{
+                background-image: "./l/jpeg";
+                font-family:sans-serif;
+            }
+            .nav-bar {
+                font-size:20px;
+                background-color:#101013;
+                overflow: hidden;
+
+            }
+            .nav-bar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .nav-bar a:hover {
+                background-color: rgb(3, 79, 129);
+                color:white;
+            }
+            .aside-links li a{
+                display:block;
+				color:white;
+				text-align:left;
+				padding:2px;
+				text-decoration:none;
+            }
+            .aside-links li{
+                list-style-type:none;
+				overflow:hidden;
+				
+            }
+           .aside-links li a:hover
+			{
+				background-color:rgb(3, 79, 129);
+			}
+            .article{
+                width:70%;
+                background-color:#101013;
+                color:white;
+                padding:20px;
+                margin-top: 10px;
+                margin-left: 20%;
+                opacity: 1.5;
+            
+            }
+            h1{
+                color:rgb(3, 79, 129);
+            }
+           footer{
+                background-color:#101013;
+                color:rgb(3, 79, 129);
+                text-decoration: none;
+                margin-top: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head-div" style="text-align:center;color:rgb(3, 79, 129);background-color:#101013;">
+                <div class="icon-div">
+                    <img src="./l.jpeg" alt="machine learning icon" title="machine learning icon" style="width:80px;height:50px;" />
+                </div>
+                <div class="heading-div" >
+                    <h1><i>Machine Learning</i></h1>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="nav-bar">
+                <a href="#" target="_self">Introduction</a>
+                <a href="#" target="_self">coursera</a>
+                <a href="#" target="_self">nptel</a>
+                <a href="#" target="_self">applications</a>
+            </div>
+        </nav>
+        <main>
+            <aside style="float:left;background-color:#101013;color:rgb(3, 79, 129);">
+                <ul class="aside-links">
+                    <li><a href="#ml-def">Machine learning Definition</a></li>
+                    <li><a href="#Supervised-learning">Supervised-learning</a></li>
+                    <li><a href="#UnSupervised-learning">UnSupervised-learning</a></li>
+                    <li><a href="#model-representation">model-representation</a></li>
+                    <li><a href="#hypothesis-function">Hypothesis function</a></li>
+                    <li><a href="#cost-function">Cost function</a></li>
+                    <li><a href="#gradient-descent">gradient-descent</a></li>
+                    
+                </ul>
+            </aside>
+            <article class="article">
+                <section>
+                    <h1 id="ml-def">Machine Learning Definition</h1>
+                    <p>Accoriding to Arthur Samuel,<blockquote>Machine Learning: Field of
+                            study that gives computers the ability to learn
+                            without being explicitly programmed.</blockquote>
+                    Tom Mitchell (1998) Well-posed Learning Problem:
+                        <blockquote>
+                                A computer program is said to learn
+                                from experience E with respect to some task T
+                                and some performance measure P, if its
+                                performance on T, as measured by P, improves
+                                with experience E.
+                        </blockquote>
+                    There are mainly two types of Machine learning algorithms.They are:<br>
+                    <pre>     1).Supervised learning
+        2).UnSupervised learning
+        Others: Reinforcement learning, recommender systems</pre>   
+                    </p>
+                    <hr>
+                    <h1 id="Supervised-learning">Supervised Learning</h1>
+                    <p>In supervised learning, we are given a data set and already know what
+                            our correct output should look like, having the idea that there is a
+                            relationship between the input and the output.\
+                        Supervised learning problems are categorized into 2 types.They are:<br>
+                        1).Regression:<br>
+                        <pre>
+                    In a regression problem, we are trying to predict results within a continuous output, meaning that we are trying
+                    to map input variables to some continuous function.
+                        </pre>
+                        2).Classification:<br>
+                        <pre>
+                    In a classification problem, we are instead trying to predict results in a discrete output. In other words,we are 
+                    trying to map input variables into discrete categories.
+                        </pre>
+                        <b>Example:</b><br>
+                        (a) Regression - Given a picture of a person, we have to predict their age on the basis of the given picture
+                        <br>(b) Classification - Given a patient with a tumor, we have to predict
+    whether the tumor is malignant or benign.
+                    </p><hr>
+                    <h1 id="UnSupervised-learning">UnSupervised Learning</h1>
+                    <p>Unsupervised learning allows us to approach problems with little or no
+                            idea what our results should look like. We can derive structure from
+                            data where we don't necessarily know the effect of the variables.<br><br>
+                        <b>Example:</b><br>
+                        Clustering: Take a collection of 1,000,000 different genes, and find a
+                        way to automatically group these genes into groups that are somehow
+                        similar or related by different variables, such as lifespan, location,
+                        roles, and so on.<br><br>
+                        Non-clustering: The "Cocktail Party Algorithm", allows you to find
+                        structure in a chaotic environment. (i.e. identifying individual voices
+                        and music from a mesh of sounds at a cocktail party).
+                    </p>
+                </section>
+                <section>
+                        <h1 id="model-representation">Model Representation</h1>
+                        <p>
+                                To establish notation for future use, we’ll use
+                                x <sup>(i)</sup> to denote the “input”
+                                variables (living area in this example), also called input features, and
+                                y <sup>(i)</sup> to denote the “output” or target variable that we are trying to
+                                predict (price)..<pre></pre> A pair
+                                (x <sup>(i)</sup> , y <sup>(i)</sup>) is called a training example, and the
+                                dataset that we’ll be using to learn—a list of m training examples<br>
+                                (x <sup>(i)</sup> , y <sup>(i)</sup>); i = 1, . . . , m —is called a training set. Note that the
+                                superscript “(i)” in the notation is simply an index into the training set,
+                                and has nothing to do with exponentiation. We will also use X to
+                                denote the space of input values, and Y to denote the space of output
+                                values. In this example, X = Y = R.<br>
+                                To describe the supervised learning problem slightly more formally,
+our goal is, given a training set, to learn a function h : X → Y so that h(x)
+is a “good” predictor for the corresponding value of y. For historical
+reasons, this function h is called a hypothesis. Seen pictorially, the
+process is therefore like this:<br><br>
+                            <a href="./ml1.png" download="mltrain.png"><img src="./ml1.png" alt="training-ml-system" title="training-ml-system" style="margin-left:20%;"/></a>
+                        </p>
+                        <h1 id="hypothesis-function">Hypothesis function</h4>
+                        <p>h<sub>a</sub>(x)=a<sub>0</sub>+a<sub>1</sub>x<sub>1</sub>+a<sub>2</sub>x<sub>2</sub></p>     
+                        <h1 id="cost-function">Cost function</h1>
+                        <p>J(theta0,theta1)=1/2m &#931;<sub>i=1</sub><sup>m</sup>(h<sub>theta</sub>(X<sup>(i)</sup>)-y<sup>(i)</sup>)<sup>2</sup></p>
+                </section>
+                <section>
+                    <h1 id="gradient-descent">Gradient Descent</h1>
+                    <code>
+                            repeat until convergence: {<br>
+                                θ<sub>0</sub> := θ<sub>0</sub> − α 1/m &#931;<sub>i=1</sub><sup>m</sup>(h (x<sup>(i)</sup> ) − y<sup>(i)</sup>)
+                                <br>θ<sub>0</sub> := θ<sub>0</sub> − α 1/m &#931;<sub>i=1</sub><sup>m</sup>(h (x<sup>(i)</sup> ) − y<sup>(i)</sup>)x<sup>(i)</sup>
+                                <br>}
+                    </code>
+
+                    </h1>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    Coursera
+                </li>
+                <li>
+                    nptel
+                </li>
+            </ul>
+        </footer>
+    </body>
+
+</html>

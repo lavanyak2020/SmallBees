@@ -10,7 +10,7 @@
         <meta http-equiv="cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
         <style>
             body{
-                background-image: "./l/jpeg";
+               
                 font-family:sans-serif;
             }
             .nav-bar {
@@ -74,7 +74,7 @@
         <header>
             <div class="head-div" style="text-align:center;color:rgb(3, 79, 129);background-color:#101013;">
                 <div class="icon-div">
-                    <img src="./l.jpeg" alt="machine learning icon" title="machine learning icon" style="width:80px;height:50px;" />
+                    <img src="images/l.jpeg" alt="machine learning icon" title="machine learning icon" style="width:80px;height:50px;" />
                 </div>
                 <div class="heading-div" >
                     <h1><i>Machine Learning</i></h1>
@@ -176,7 +176,7 @@ our goal is, given a training set, to learn a function h : X → Y so that h(x)
 is a “good” predictor for the corresponding value of y. For historical
 reasons, this function h is called a hypothesis. Seen pictorially, the
 process is therefore like this:<br><br>
-                            <a href="./ml1.png" download="mltrain.png"><img src="./ml1.png" alt="training-ml-system" title="training-ml-system" style="margin-left:20%;"/></a>
+                            <a href="images/ml1.png" download="mltrain.png"><img src="images/ml1.png" alt="training-ml-system" title="training-ml-system" style="margin-left:20%;"/></a>
                         </p>
                         <h1 id="hypothesis-function">Hypothesis function</h4>
                         <p>h<sub>a</sub>(x)=a<sub>0</sub>+a<sub>1</sub>x<sub>1</sub>+a<sub>2</sub>x<sub>2</sub></p>     

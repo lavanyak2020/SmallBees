@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LavanyaK</title>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="Machine learning,Gradient descent,Regression,Classification,Supervised learning,Unsupervised learning"/>
+        <meta name="description" content="Introduction to machine learning"/>
+        <meta name="revised" content="LavanyaK,08-03-2019"/>
+        <meta http-equiv="refresh" content="100;url = task5.html"/>
+        <meta http-equiv="cookie" content = "userid = xyz; expires = Wednesday, 08-Aug-15 23:59:59 GMT;" />
+        <style>
+            body{
+               
+                font-family:sans-serif;
+            }
+            .nav-bar {
+                font-size:20px;
+                background-color:#101013;
+                overflow: hidden;
+
+            }
+            .nav-bar a {
+                float: left;
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 20px 16px;
+                text-decoration: none;
+                font-size: 17px;
+            }
+            .nav-bar a:hover {
+                background-color: rgb(3, 79, 129);
+                color:white;
+            }
+            .aside-links li a{
+                display:block;
+				color:white;
+				text-align:left;
+				padding:2px;
+				text-decoration:none;
+            }
+            .aside-links li{
+                list-style-type:none;
+				overflow:hidden;
+				
+            }
+           .aside-links li a:hover
+			{
+				background-color:rgb(3, 79, 129);
+			}
+            .article{
+                width:70%;
+                background-color:#101013;
+                color:white;
+                padding:20px;
+                margin-top: 10px;
+                margin-left: 20%;
+                opacity: 1.5;
+            
+            }
+            h1{
+                color:rgb(3, 79, 129);
+            }
+           footer{
+                background-color:#101013;
+                color:rgb(3, 79, 129);
+                text-decoration: none;
+                margin-top: 5px;
+                padding: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <div class="head-div" style="text-align:center;color:rgb(3, 79, 129);background-color:#101013;">
+                <div class="icon-div">
+                    <img src="./l.jpeg" alt="machine learning icon" title="machine learning icon" style="width:80px;height:50px;" />
+                </div>
+                <div class="heading-div" >
+                    <h1><i>Machine Learning</i></h1>
+                </div>
+            </div>
+        </header>
+        <nav>
+            <div class="nav-bar">
+                <a href="#" target="_self">Latest</a>
+                <a href="#" target="_self">My Subribe</a>
+                <a href="#" target="_self">Watch Later</a>
+                <a href="#" target="_self">Logout</a>
+            </div>
+        </nav>
+        <main>
+            <aside style="float:left;background-color:#101013;color:rgb(3, 79, 129);">
+                <ul class="aside-links">
+                    <li><a href="#cprogramming">C programming</a></li>
+                    <li><a href="#algorithms">Algorithms</a></li>
+                    <li><a href="#machine_learning">Machine learning</a></li>
+                    <li><a href="#network_security">network_security</a></li>
+                    <li><a href="#algorithms">Hypothesis function</a></li>
+                    <li><a href="#">Cost function</a></li>
+                    <li><a href="#">gradient-descent</a></li>
+                    
+                </ul>
+            </aside>
+            <article class="article">
+                <section>
+                    <figure style="text-align:center;">
+                        <img src="./book.jpg" alt="books" title="books" width="700px" height="400px" />
+                        <figcaption style="text-align:center;"><b><i>Online Library for cseian</i></b></figcaption>
+                    </figure>
+                    <audio controls preload="metadata" autoplay loop>
+                        <source src="mya.mp3" type="audio/mp3">
+                    </audio>
+                </section>
+                <section>
+                    <div id="cprogramming" style="background-color:gray;width:100%; padding:10px;">
+                        <h1>C Programming</h1>
+                        <div class="videobox" >
+                                <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/C-programming.png">
+                                        <source src="./videos/1.One Dimensional Arrays.mp4" type="video/mp4">
+                                </video>
+                                <div id="progressbar"></div>
+                                <button onclick="play()">Play</button>
+                                <button onclick="pause()">Pause</button>
+                                <button onclick="stop()">Stop</button>
+                        </div>
+                        <div class="videobox" >
+                                <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/cp.jpg">
+                                        <source src="./videos/1.One Dimensional Arrays.mp4" type="video/mp4">
+                                </video>
+                                <div id="progressbar"></div>
+                                <button onclick="play()">Play</button>
+                                <button onclick="pause()">Pause</button>
+                                <button onclick="stop()">Stop</button>
+                        </div>
+                        <div class="videobox">
+                                <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/cp1.png">
+                                        <source src="./videos/1.One Dimensional Arrays.mp4" type="video/mp4">
+                                </video>
+                                <div id="progressbar"></div>
+                                <button onclick="play()">Play</button>
+                                <button onclick="pause()">Pause</button>
+                                <button onclick="stop()">Stop</button>
+                        </div>
+                    </div><br>
+                    <hr><br>
+                    <div id="algorithms" style="background-color:gray;width:100%; padding:10px;">
+                            <h1>Algorithms</h1>
+                            <div class="videobox" >
+                                    <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/algo.png">
+                                            <source src="./videos/Algorithms lecture 2 -- Time complexity Analysis of iterative programs.mp4" type="video/mp4">
+                                    </video>
+                                    <div id="progressbar"></div>
+                                    <button onclick="play()">Play</button>
+                                    <button onclick="pause()">Pause</button>
+                                    <button onclick="stop()">Stop</button>
+                            </div>
+                            <div class="videobox" >
+                                    <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/cp.jpg">
+                                            <source src="./videos/1.One Dimensional Arrays.mp4" type="video/mp4">
+                                    </video>
+                                    <div id="progressbar"></div>
+                                    <button onclick="play()">Play</button>
+                                    <button onclick="pause()">Pause</button>
+                                    <button onclick="stop()">Stop</button>
+                            </div>
+                    </div><br><hr><br>
+                    <div id="machine_learning" style="background-color:gray;width:100%; padding:10px;">
+                            <h1>Machine Learning</h1>
+                            <div class="videobox" >
+                                    <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/algo.png">
+                                            <source src="./videos/Algorithms lecture 2 -- Time complexity Analysis of iterative programs.mp4" type="video/mp4">
+                                    </video>
+                                    <div id="progressbar"></div>
+                                    <button onclick="play()">Play</button>
+                                    <button onclick="pause()">Pause</button>
+                                    <button onclick="stop()">Stop</button>
+                            </div>
+                            <div class="videobox" >
+                                    <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/cp.jpg">
+                                            <source src="./videos/1.One Dimensional Arrays.mp4" type="video/mp4">
+                                    </video>
+                                    <div id="progressbar"></div>
+                                    <button onclick="play()">Play</button>
+                                    <button onclick="pause()">Pause</button>
+                                    <button onclick="stop()">Stop</button>
+                            </div>
+                    </div><br><hr><br>
+                    <div id="network_security" style="background-color:gray;width:100%; padding:10px;">
+                            <h1>Network security</h1>
+                            <div class="videobox" >
+                                    <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/algo.png">
+                                            <source src="./videos/Algorithms lecture 2 -- Time complexity Analysis of iterative programs.mp4" type="video/mp4">
+                                    </video>
+                                    <div id="progressbar"></div>
+                                    <button onclick="play()">Play</button>
+                                    <button onclick="pause()">Pause</button>
+                                    <button onclick="stop()">Stop</button>
+                            </div>
+                            <div class="videobox" >
+                                    <video id="videoPlayer" ontimeupdate="updateProgress()" controls height="400px" width="450px" poster="./images/cp.jpg">
+                                            <source src="./videos/1.One Dimensional Arrays.mp4" type="video/mp4">
+                                    </video>
+                                    <div id="progressbar"></div>
+                                    <button onclick="play()">Play</button>
+                                    <button onclick="pause()">Pause</button>
+                                    <button onclick="stop()">Stop</button>
+                            </div>
+                    </div>
+                    
+
+                    
+                </section>
+            </article>
+        </main>
+        <footer>
+            <ul>
+                <li>
+                    Home
+                </li>
+                <li>
+                    Coursera
+                </li>
+                <li>
+                    nptel
+                </li>
+            </ul>
+        </footer>
+        <script type="text/javascript">
+            var video=document.getElementById('videoPlayer');
+            function play(){
+                video.play();
+            }
+            function pause(){
+                video.pause();
+            }
+            function stop(){
+                video.stop();
+                video.currentTime=0;
+            }
+            function updateProgress(){
+                var pb=document.getElementById('progressbar');
+                pb.innerHtml=Math.round((video.currentTime*100)/video.duration);
+            }
+
+        </script>
+    </body>
+
+</html>

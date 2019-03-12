@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>LavanyaK</title>
+        <meta charset="UTF-8" />
+        <meta name="keywords" content="redminote5,LavanyaK,dj"/>
+        <meta name="author" content="lavanyaK"/>
+        <meta name="description" content="Advertising website"/>
+        <meta name="revised" content="12-03-2019" />
+        <meta http-equiv = "refresh" content = "1000; url = http://www.google.com" />
+        <style>
+            table {
+                width:45%;
+                float: left;
+            }
+            table, th, td {
+                border: 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td {
+                padding: 15px;
+                text-align: center;
+            }
+            table#t01 tr:nth-child(even) {
+                background-color: #eee;
+            }
+            table#t01 tr:nth-child(odd) {
+                background-color: #fff;
+            }
+            table#t01 th {
+                background-color: black;
+                color: white;
+            }
+            a{
+                text-decoration: none;
+            }
+        </style>
+    </head>
+    <body>
+        <table id="t01">
+            <tr>
+                <th>Course</th>
+                <th colspan="3">Textbooks</th> 
+            </tr>
+            <tr>
+                <td><b>C Programming</b></td>
+                <td><a href="../books/Introduction to Algorithms.pdf" target="myframe" alt="C Programming by ReemaThareja" title="C Programming by ReemaThareja">ReemaThareja</a></td>
+                <td><a href="../books/Introduction to Algorithms.pdf"  target="myframe" alt="C Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">ANSCI C</a></td>
+                <td><a href="../books/Introduction to Algorithms.pdf"  target="myframe" alt="C Programming by Balaguru swamy" title="C Programming by Balaguru swamy">Balaguru swamy</a></td>
+            </tr>
+            <tr>
+                <td><b>Datastructures</b></td>
+                <td><a href="../books/Introduction to Algorithms.pdf" target="myframe" alt="c Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">ReemaThareja</a></td>
+                <td rowspan="2"><a href="../books/Introduction to Algorithms.pdf" target="myframe" alt="Datastructures and Algorithms by Narasimha Karumanchi" title="Datastructures and Algorithms by Narasimha Karumanchi">Datastructures and Algorithms by Narasimha Karumanchi</a></td>
+                <td><a href="" alt="c Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">Balaguru swamy</a></td>
+            </tr>
+            <tr>
+                <td><b>Algorithms</b></td>
+                <td><a href="../books/Introduction to Algorithms.pdf" target="myframe" alt="c Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">Cormen</a></td>
+                <td><a href="" alt="c Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">Balaguru swamy</a></td>
+            </tr>
+            <tr>
+                <td><b>Java</b></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="Black book by nageswarao" title="Black book by nageswarao">Black book by nageswarao</a></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="head first java" title="head first java">Head first Java</a></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="Java 6th edition" title="Java 6th edition">Java 6th edition</a></td>
+            </tr>
+            <tr>
+                <td><b>Artificial Intelligence</b></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="c Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">ReemaThareja</a></td>
+                <td colspan="2"><a href="../books/AI2.pdf" target="myframe" alt="c Programming by yaswanth kanethkar" title="C Programming by Yaswanth kanethkar">ANSCI C</a></td>
+                
+            </tr>
+            <tr>
+                <td><b>Machine Learning</b></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="Black book by nageswarao" title="Black book by nageswarao">Black book by nageswarao</a></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="head first java" title="head first java">Head first Java</a></td>
+                <td><a href="../books/AI.pdf" target="myframe" alt="Java 6th edition" title="Java 6th edition">Java 6th edition</a></td>
+            </tr>
+        </table>
+        <iframe style="float: right;"name="myframe" src="classification.pdf" allowfullscreen width="53%" height="700" frameborder="1" scrolling="yes"></iframe>
+       
+    </body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Task 8
+        </title>
+        <meta charset="UTF-8"/>
+        <meta name="keywords" content="forms,legend tag,input tags,button"/>
+        <meta name="author" content="lavanyak"/>
+        <meta name="revised" content="lavanyak,13-03-2019" />
+        <meta name="description" content="Introducing forms and some tag fields used in forms"/>
+        <style>
+            body{
+                background-image: url("44883_top-10-desktop-wallpapers.jpg");
+            }
+            #fs{
+                width:50%;
+                padding: 50px;
+                text-align: left;
+                margin-left: 20%;
+                border: 2px solid black;
+                background-image: url('1357138.jpg');
+                color: white;
+                opacity: 0.9;
+                overflow-block: hidden;
+            }
+            .lbl{
+                font-size: 15px;
+                color: aquamarine;               
+            }
+        </style>
+    </head>
+    <body>
+        <form action="" method="GET">
+            <fieldset id="fs">
+                <legend style="color:blue;font-size: 20px;"><b>Student Registration form</b></legend>
+                <label class="lbl"><b>Name:</b></label><br>
+                <input type="text" placeholder="Enter name" name="name" /><br>
+                <label class="lbl"><b>Date of Birth</b></label><br>
+                <input type="date" placeholder="Enter DOB" name="dob"><br>
+                <label class="lbl"><b>Age</b></label><br>
+                <input type="number" placeholder="Age" name="age" min="18" skip="1"><br>
+                <label class="lbl"><b>Gender</b></label><br>
+                <input type="radio" name="gender" id="male"><label>Male</label>
+                <input type="radio" name="gender" id="female"><label>Female</label>
+                <br>
+                <label class="lbl"><b>Known Languages</b></label><br>
+                <input type="checkbox" name="language" id="eng"><label>English</label><br>
+                <input type="checkbox" name="language" id="tel"><label>Telugu</label><br>
+                <input type="checkbox" name="language" id="hind"><label>Hindi</label><br>
+                
+                <label class="lbl"><b>Address</b></label><br>
+                <textarea autofocus wrap="hard" name="address" cols="20" rows="10"></textarea><br>
+
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+        </form>
+    </body>
+   
+</html>
